@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia(s)</title>
+    <link rel = "icon" href ="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="over-container">
+        <div class="container">
+
+            <h1>Criptografia</h1>
+
+            <section class="box form form-seleciona">
+                <label for="cripts">Selecione a criptografia</label>
+                <select name="cripts" id="cripts">
+                    <option value="alura" selected>Alurex 9000</option>
+                    <option value="cesar">Cifra de César</option>
+                </select>
+
+            </section>
+
+            <div class="caixa-container">
+                <section class="box form form-alura">
+                    <label for="input-mensagem">Digite a mensagem:<br><span class="label-aviso">Apenas letras minúsculas
+                            e espaço (sem caracteres especiais)</span></label>
+                    <input type="text" name="input-mensagem" id="input-mensagem" class="input-mensagem input-texto"
+                        placeholder="Insira o texto aqui" pattern="[a-z]{1,15}" required>
+                    <div class="botoes">
+                        <button id="botao-criptografar" class="btn">Criptografar!</button>
+                        <button id="botao-descriptografar" class="btn">Descriptografar!</button>
+                    </div>
+                </section>
+
+                <section class="box form form-cesar invisivel">
+                    <label for="input-mensagem-cesar"><br><span class="label-aviso">Apenas letras minúsculas e espaço
+                            (sem caracteres especiais)</span></label>
+                    <input type="text" name="input-mensagem-cesar" id="input-mensagem-cesar"
+                        class="input-mensagem-cesar input-texto" placeholder="Insira o texto aqui"
+                        pattern="[a-z]{1,15}">
+                    <br>
+                    <label for="chave-cesar">Digite a chave (1-26):</label>
+                    <input type="number" name="chave-cesar" id="chave-cesar" class="chave-cesar" min="1" max="26">
+
+                    <div class="botoes">
+                        <button id="botao-criptografar-cesar" class="btn">Criptografar!</button>
+                        <button id="botao-descriptografar-cesar" class="btn">Descriptografar!</button>
+                    </div>
+                </section>
+
+                <section class="box mensagem">
+                    <h2>Mensagem Descriptografada:</h2>
+                    <input type="text" name="resposta-mensagem" id="resposta-mensagem" class="input-texto">
+                    <button id="botao-copiar" class="btn">Copiar</button>
+                </section>
+
+                <div id="redes-sociais">
+                    <a href="https://github.com/Azoubs" target="_blank" class="link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/filipe-azoubel-79393822a/" target="_blank" class="link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/cybermangue" target="_blank" class="link"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/alurex.js"></script>
+    <script src="js/cesar.js"></script>
+    <script src="js/copia.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

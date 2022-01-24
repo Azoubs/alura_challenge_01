@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    cursor: crosshair;
+    margin: 0;
+    padding: 0;
+}
+
+.invisivel {
+    display: none;
+}
+
+body {
+    background-image: url(./img/bg.gif);
+    background-size: cover;
+}
+
+h1, h2, label {
+    color: white;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.over-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    background-color: #0b1354c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh;
+}
+
+#cripts {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;   
+    border-radius: 5px;
+    background-color: #e7c6fa;
+}
+
+#cripts:hover {
+    background-color: #ad89c2;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.label-aviso {
+    font-size: .75em;
+}
+
+.input-texto {
+    width: 100%;
+    padding: 10px;
+    background-color: #74b4e4;
+    border: none;
+    border-radius: 5px;
+}
+
+#chave-cesar {
+    width: 100%;
+    padding: 10px;
+    background-color: #74b4e4;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7c6fa;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #690759;
+    border: none;
+    color: #f6ecf5;
+}
+
+.botoes {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#resposta-mensagem {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+#redes-sociais {
+    padding-top: 20px;
+    margin: 20px auto 0;
+    border-top: 1px solid #74b4e4;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+#redes-sociais .link {
+    color: #e7c6fa;
+}
+
+#redes-sociais .link:hover {
+    color: #c286e6;
+}
