@@ -1,0 +1,12 @@
+@media screen and (min-width: 718px) {
+	.container {
+        max-width: 500px;
+    }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}

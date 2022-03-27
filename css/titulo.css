@@ -1,0 +1,7 @@
+.titulo {
+    color: var(--principal-clara);
+    font-family: var(--grot);
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    text-align: center;
+}

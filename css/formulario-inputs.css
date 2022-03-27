@@ -1,0 +1,15 @@
+.formulario__input__texto {
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    color: var(--principal-media);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+}
+
+.formulario__input__texto:focus {
+    border: 1px solid var(--principal-escura);
+    color: var(--principal-media);
+    outline: none;
+}

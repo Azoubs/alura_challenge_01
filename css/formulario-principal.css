@@ -1,0 +1,29 @@
+.formulario {
+    padding: 20px;
+    width: 100%;
+}
+
+.formulario__label {
+    font-family: var(--mont);
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.formulario__aviso {
+    font-family: var(--mont);
+    font-size: .9em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.formulario__caixa__botoes {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+

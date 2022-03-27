@@ -1,0 +1,22 @@
+.main__footer {
+    border-top: 1px solid var(--principal-clara);
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    width: 70%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__footer i {
+    color: var(--principal-clara);
+    font-size: 1.8em;
+    transition: .5s;
+}
+
+.main__footer i:hover {
+    color: var(--principal-escura);
+    transform: scale(1.25);
+}

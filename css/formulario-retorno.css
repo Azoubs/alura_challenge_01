@@ -1,0 +1,15 @@
+.formulario__retorno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario__subtitulo {
+    font-family: var(--grot);
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+

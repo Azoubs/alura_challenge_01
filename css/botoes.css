@@ -1,0 +1,27 @@
+.botao {
+    background-color: var(--principal-media);
+    border: 1px solid var(--principal-media);
+    color: var(--branco);
+    font-family: var(--grot);
+    font-size: 1em;
+    
+    padding: 8px;
+    transition: .5s;
+    width: 47%;
+}
+
+.botao:hover {
+    background-color: var(--principal-escura);
+    border: 1px solid var(--principal-escura);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.formulario__botao__copiar {
+    margin-left: 0;
+}
+
+.formulario__botao__copiar {
+    margin: 0 auto;
+    margin-top: 15px;
+}

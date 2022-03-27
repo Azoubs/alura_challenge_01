@@ -2,84 +2,74 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografia(s)</title>
-    <link rel = "icon" href ="img/icon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="icon.png">
+	<title>Criptografia Alura</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/titulo.css">
+	<link rel="stylesheet" href="css/botoes.css">
+	<link rel="stylesheet" href="css/formulario-inputs.css">
+	<link rel="stylesheet" href="css/formulario-principal.css">
+	<link rel="stylesheet" href="css/formulario-retorno.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/responsividade.css">
 </head>
 
 <body>
-    <div class="over-container">
-        <div class="container">
+	<div class="wrapper">
+		<main class="main">
+			<div class="container">
+				<h1 class="titulo">Criptografia - Alura</h1>
 
-            <h1>Criptografia</h1>
+				<div class="formulario">
+					
+					<label for="texto" class="formulario__label">Digite a mensagem</label>
+					<p class="formulario__aviso">Apenas minúsculas e espaço (sem caracteres especiais)</p>
+					<input type="text" name="texto" id="texto" class="formulario__input__texto">
+					
+					<div class="formulario__caixa__botoes">
+						<button id="botao_criptografar" class="botao formulario__caixa__botao">Criptografar</button>
+						<button id="botao_descriptografar" class="botao formulario__caixa__botao">Descriptografar</button>
+					</div>
 
-            <section class="box form form-seleciona">
-                <label for="cripts">Selecione a criptografia</label>
-                <select name="cripts" id="cripts">
-                    <option value="alura" selected>Alurex 9000</option>
-                    <option value="cesar">Cifra de César</option>
-                </select>
+					<h2 class="formulario__subtitulo">Mensagem descriptografada</h2>
+					
+					<div class="formulario__retorno">
+						<input type="text" name="descriptografada" id="descriptografada" class="formulario__input__texto formulario__input__resultado">
+						<button id="copiar" class="botao formulario__botao__copiar">Copiar</button>
+					</div>
 
-            </section>
+				</div>
 
-            <div class="caixa-container">
-                <section class="box form form-alura">
-                    <label for="input-mensagem">Digite a mensagem:<br><span class="label-aviso">Apenas letras minúsculas
-                            e espaço (sem caracteres especiais)</span></label>
-                    <input type="text" name="input-mensagem" id="input-mensagem" class="input-mensagem input-texto"
-                        placeholder="Insira o texto aqui" pattern="[a-z]{1,15}" required>
-                    <div class="botoes">
-                        <button id="botao-criptografar" class="btn">Criptografar!</button>
-                        <button id="botao-descriptografar" class="btn">Descriptografar!</button>
-                    </div>
-                </section>
+				<div class="main__footer">
+					<a href="https://github.com/Azoubs" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/filipe-azoubel-79393822a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="http://twitter.com/cybermangue" target="_blank"><i class="fab fa-twitter"></i></i></a>
+				</div>
 
-                <section class="box form form-cesar invisivel">
-                    <label for="input-mensagem-cesar"><br><span class="label-aviso">Apenas letras minúsculas e espaço
-                            (sem caracteres especiais)</span></label>
-                    <input type="text" name="input-mensagem-cesar" id="input-mensagem-cesar"
-                        class="input-mensagem-cesar input-texto" placeholder="Insira o texto aqui"
-                        pattern="[a-z]{1,15}">
-                    <br>
-                    <label for="chave-cesar">Digite a chave (1-26):</label>
-                    <input type="number" name="chave-cesar" id="chave-cesar" class="chave-cesar" min="1" max="26">
+			</div>
+		</main>
 
-                    <div class="botoes">
-                        <button id="botao-criptografar-cesar" class="btn">Criptografar!</button>
-                        <button id="botao-descriptografar-cesar" class="btn">Descriptografar!</button>
-                    </div>
-                </section>
-
-                <section class="box mensagem">
-                    <h2>Mensagem Descriptografada:</h2>
-                    <input type="text" name="resposta-mensagem" id="resposta-mensagem" class="input-texto">
-                    <button id="botao-copiar" class="btn">Copiar</button>
-                </section>
-
-                <div id="redes-sociais">
-                    <a href="https://github.com/Azoubs" target="_blank" class="link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/filipe-azoubel-79393822a/" target="_blank" class="link"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/cybermangue" target="_blank" class="link"><i
-                            class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/alurex.js"></script>
-    <script src="js/cesar.js"></script>
-    <script src="js/copia.js"></script>
-    <script src="js/main.js"></script>
-
+		<script src="js/valida.js"></script>
+		<script src="js/criptografa.js"></script>
+		<script src="js/descriptografa.js"></script>
+		<script src="js/copia.js"></script>
+		<script src="js/main.js"></script>
+		
+	</div>
 </body>
 
 </html>
